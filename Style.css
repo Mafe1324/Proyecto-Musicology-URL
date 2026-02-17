@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #2b2b2b;
+}
+
+.navbar {
+    background-color: #1f1f1f;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero {
+    background-image: url("imagenes-proyecto/background.png");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 500px;
+    margin-left: 60px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #fc6c05;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
+.pricing {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.pricing-card {
+    background-color: #fc6c05;
+    width: 250px;
+    padding: 30px 20px;
+}
+
+.price {
+    background-color: #1f1f1f;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.dance-tour {
+    background-color: #fc6c05;
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.tour-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #2b2b2b;
+    width: 250px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+}
+
+footer {
+    background-color: #fc6c05;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+@media (max-width: 1279px) {
+    .hero-content {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 920px) {
+    .hero {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin-left: 0;
+    }
+
+    .tour-cards,
+    .pricing-cards {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tour-cards,
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .card,
+    .pricing-card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 352px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+}
